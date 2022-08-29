@@ -167,6 +167,7 @@ body {
     background-size: cover;
     background-image: url("/Images/RevFit About.jpg");
     background-position: top center;
+    background-attachment: fixed;
 }
 
 .banner-con-backdrop {

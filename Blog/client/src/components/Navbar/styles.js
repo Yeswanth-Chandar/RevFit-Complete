@@ -59,7 +59,4 @@ export default makeStyles((theme) => ({
     backgroundColor: '#eaa221',
     borderRadius:'4.5px',
   },
-  signin:{
-    color: 'white',
-  }
 }));
