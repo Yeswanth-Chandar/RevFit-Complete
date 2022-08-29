@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<title>About RevFit Team</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="scale.css" />
+	<!-- <link rel="stylesheet" href="/Home/index.css"> -->
+	<!-- <link rel="stylesheet" href="/Home/fonts.css"> -->
+	<link rel="stylesheet" href="main2.css">
+	<link rel="stylesheet" href="defaults.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<script>
+		var rev = window.rev = {
+
+
+		}
+
+		function path(path, config) {
+			var parts = path.split(".");
+			var point = rev;
+
+			for (var i = 0; i < parts.length; i++) {
+				if (!point.hasOwnProperty(parts[i]))
+					point[parts[i]] = {};
+
+				point = point[parts[i]];
+			}
+
+			if (typeof config == "object")
+				for (var key in config)
+					point[key] = config[key];
+
+			return point;
+		}
+	</script>
+
+
+	<link rel="stylesheet" href="index.css">
+
+
+	</head>
+
+	<body>
+
+		<nav id="navbar">
+			<div class="container">
+				<a href="/Home/Index.html" hreflang="en" id="navbar-logo">
+					<img src="/Images/RevFit-1C.png" alt="Revfit logo in navigation menu">
+				</a>
+				<a href="#" id="navbar-menu-toggle">
+					<img src="/Images/img/menu-toggle-black.svg" alt="Top menu toggle">
+				</a>
+				<ul id="navbar-menu">
+
+					<li class="">
+						<a href="/Download/download.html" hreflang="en">Download</a>
+					</li>
+
+					<li class="active">
+						<a href="about.html" hreflang="en">About</a>
+					</li>
+
+					<li>
+						<a href="/Support/home.html" hreflang="en">Help</a>
+					</li>
+					<li class="">
+						<a href="/Donate/donate.html" hreflang="en">Donate</a>
+					</li>
+					<li class="">
+						<a href="http://localhost:3000" hreflang="en">Blog</a>
+					</li>
+					<li id="navbar-locale-menubar">
+						<a id="navbar-locale-selected">
+							English (US)
+						</a>
+						<ul id="navbar-locale-menu">
+
+							<li>
+								<a href="/de/" hreflang="de">
+									Deutsch (DE)
+								</a>
+							</li>
+
+							<li>
+								<a href="/en/" hreflang="en">
+									English (US)
+								</a>
+							</li>
+
+							<li>
+								<a href="/es/" hreflang="es">
+									Español (España) (ES)
+								</a>
+							</li>
+
+							<li>
+								<a href="/fr/" hreflang="fr">
+									Français (FR)
+								</a>
+							</li>
+
+							<li>
+								<a href="/it/" hreflang="it">
+									Italiano (IT)
+								</a>
+							</li>
+
+							<li>
+								<a href="/nl/" hreflang="nl">
+									Nederlands (NL)
+								</a>
+							</li>
+
+							<li>
+								<a href="/pt_BR/" hreflang="pt-BR">
+									Português (Brasil) (BR)
+								</a>
+							</li>
+
+							<li>
+								<a href="/ru/" hreflang="ru">
+									Русский (RU)
+								</a>
+							</li>
+
+							<li>
+								<a href="/zh_CN/" hreflang="zh-CN">
+									中文(简体) (CN)
+								</a>
+							</li>
+
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="banner-con-container "></div>
+		<div class="page-con-content"></div>
+		<div class="page-con-container">
+			<div class="page-in-container">
+				<div class='splitter-con-container'>
+					<div class='splitter-txt-wrapper'>
+						<div class='container-con-block darkmode-block'>
+							<div class='container-con-wrapper'>
+								<div class='container-tx1-block darkmode-txt'>
+									<div class='container-emp-block'>
+									</div>
+									<h2>The Project</h2>
+								</div>
+								<div class='container-tx2-block darkmode-txt'>
+									<p>
+										RevFit as a idea came to us after dealing with lots of fake reviews, When you
+										try to find something useful those fake reviews make it more difficult to have a
+										clear Decision. <br>
+										<br>
+										So we decided to make the web as free of fake reviews as possible and to do that
+										we needed a automation tool to do it. And thats how we created RevFit. A
+										Powerful Tool to Filter Reviews And make your browsing experience better.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='splitter-img-container splitter-con-right'>
+						<div class='splitter-img-wrapper'
+							style="background: url('/images/Powered By.jpg') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+				</div>
+				<div class='splitter-con-container'>
+					<div class='splitter-img-container splitter-con-left'>
+						<div class='splitter-img-wrapper'
+							style="background: url('/images/image_processing20210918-24605-17yguik.gif') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+					<div class='splitter-txt-wrapper'>
+						<div class='container-con-block darkmode-block'>
+							<div class='container-con-wrapper'>
+								<div class='container-tx1-block darkmode-txt'>
+									<div class='container-emp-block'>
+									</div>
+									<h2>Our Goal</h2>
+								</div>
+								<div class='container-tx2-block darkmode-txt'>
+									<p>
+										Our Goal is to Chop off as many unwanted reviews as possible, By improving our
+										tool to get good at Filtering & blocking. And to give people freedom of choice
+										by presenting clean reviews. <br>
+										<br>
+										Our Journey begins " well technically not yet completed 😅", We'll do what ever
+										it takes to Filter reviews. We are hoping to improve our algorithm using
+										machine-language and block chain. Which I don't Know yet
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='splitter-con-container'>
+					<div class='splitter-txt-wrapper'>
+						<div class='container-con-block darkmode-block'>
+							<div class='container-con-wrapper'>
+								<div class='container-tx1-block darkmode-txt'>
+									<div class='container-emp-block'>
+									</div>
+									<h2>The People</h2>
+								</div>
+								<div class='container-tx2-block darkmode-txt'>
+									<p>
+										The project is currently maintained and organized by a "unique cast of
+										characters" which is absolutely me😎, all with meaningful roles to contribute to
+										different aspects of the project. Whether it's working on the Filtering
+										directly, coordinating community efforts or even keeping this very website
+										current, everyone plays a role that adds to the bigger picture. <br>
+										<br>
+										And am running out of content so pls don't read this sir, If you're still here
+										consider giving me full marks✌. Thank You sir🙏.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='splitter-img-container splitter-con-right'>
+						<div class='splitter-img-wrapper'
+							style="background: url('/Images/Teams_illustrations_Full+Res-01.png') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<footer id="footer" class="content">
+				<div class="footer-wrap footer-links">
+					<div class="container">
+						<div class="row">
+							<nav class="column one-fourth">
+								<h5 class="footer-heading">Download</h5>
+								<ul>
+									<li><a href="/en/Revfit-plus-chrome" hreflang="en">Revfit for Chrome</a></li>
+									<li><a href="/en/Revfit-plus-firefox" hreflang="en">Revfit for Firefox</a></li>
+									<li><a href="/en/ad-blocker-safari" hreflang="en">Revfit for Safari</a></li>
+									<li><a href="/en/Revfit-plus-opera" hreflang="en">Revfit for Opera</a></li>
+									<li><a href="/en/Revfit-plus-edge" hreflang="en">Revfit for Edge</a></li>
+									<li><a href="/en/android-install" hreflang="en">Revfit App for Android</a></li>
+								</ul>
+							</nav>
+							<nav class="column one-fourth">
+								<h5 class="footer-heading">Resources</h5>
+								<ul>
+
+									<li><a href="/en/acceptable-Reviews" hreflang="en">Review Filtering</a></li>
+
+									<li><a href="/en/documentation" hreflang="en">Documentation</a></li>
+
+									<li><a href="/en/deployments" hreflang="en">For admins</a></li>
+
+									<li><a href="/en/bugs" hreflang="en">Report an issue</a></li>
+
+
+									<li><a href="/en/faq-privacy" hreflang="en">Privacy FAQ</a></li>
+
+									<li><a href="https://help.revfit.com/en/Revfitplus/how-to-write-filters"
+											target="_blank" hreflang="en">Writing Revfit filters</a></li>
+								</ul>
+							</nav>
+							<nav class="column one-fourth">
+								<h5 class="footer-heading">Community</h5>
+								<ul>
+									<li><a href="/en/contribute" hreflang="en">Contribute</a></li>
+									<li><a href="https://Revfitplus.org/releases/" hreflang="en">Announcements</a>
+									</li>
+									<li><a href="https://Revfitplus.org/blog/" hreflang="en">Blog</a></li>
+									<li><a href="https://Revfitplus.org/forum/" hreflang="en">Forum</a></li>
+								</ul>
+							</nav>
+							<nav class="column one-fourth">
+								<h5 class="footer-heading">Development</h5>
+								<ul>
+									<li><a href="https://gitlab.com/revfit/Revfitplus">Source Code</a></li>
+
+
+									<li><a href="/en/tools" hreflang="en">Tools</a></li>
+
+
+									<li><a href="/en/careers" hreflang="en" hreflang="en">Jobs</a></li>
+									<li><a href="/en/partner-integrations" hreflang="en"></a></li>
+								</ul>
+							</nav>
+
+							<nav id="social-list" class="column">
+								<h5 class="footer-social-heading">Follow us on</h5>
+								<ul>
+									<li>
+										<a href="https://twitter.com/RevfitPlus" title="Follow Revfit on Twitter"
+											target="_blank" rel="nofollow noopener">
+											<img src="/Images/img/footer-twitter-glyphicon.png"
+												alt="Twitter glyphicon">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/user/RevfitPlusOfficial"
+											title="Subscribe to Revfit on YouTube" target="_blank"
+											rel="nofollow noopener">
+											<img src="/Images/img/footer-youtube-glyphicon.png"
+												alt="YouTube glyphicon">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/Revfitplus"
+											title="Follow Revfit on Facebook" target="_blank"
+											rel="nofollow noopener">
+											<img src="/Images/img/footer-facebook-glyphicon.png"
+												alt="Facebook glyphicon">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/Revfitplus/"
+											title="Follow Revfit on Instagram" target="_blank"
+											rel="nofollow noopener">
+											<img src="/Images/img/footer-instagram-glyphicon.png"
+												alt="Instagram glyphicon">
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-wrap footer-legal-links">
+					<div class="container">
+						<div id="footer-legal">
+							<p id="copyright-notice">Copyright © 2022 All rights reserved. Revfit<sup>®</sup></p>
+							<ul id="legal-list">
+
+
+								<li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+
+								<li><a href="/en/privacy" hreflang="en">Privacy Policy</a></li>
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+	</body>
+	<script src="/Home/main.js"></script>
+
+</html>

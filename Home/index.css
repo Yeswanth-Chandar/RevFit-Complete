@@ -1,0 +1,766 @@
+/******************************************************************************
+ * Browser-based styles
+ *****************************************************************************/
+
+.show-on-msie,
+.msie .hide-on-msie,
+.show-on-ios,
+.ios .hide-on-ios,
+.show-on-android,
+.android .hide-on-android,
+.show-on-samsung,
+.samsungBrowser .hide-on-samsung,
+.samsungBrowser.android .hide-on-samsung
+{ display: none; }
+
+.msie .show-on-msie,
+.ios .show-on-ios,
+.android .show-on-android,
+.samsungBrowser .show-on-samsung
+{ display: inherit; }
+
+/******************************************************************************
+ * Introduction sections
+ *****************************************************************************/
+
+#hero-download
+{
+  position: relative; /* reference for #intro-graphic-background */
+  min-height: 1px; /* Fixes flexbox bug in IE11 */
+}
+
+/******************************************************************************
+ * Mobile intro sections
+ *****************************************************************************/
+
+.intro-mobile
+{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.intro-mobile h1 span,
+.intro-mobile .subheading span
+{
+  display: block;
+}
+
+.intro-mobile h1,
+.intro-mobile .h1
+{
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.intro-mobile .subheading
+{
+  margin-top: -0.7em;
+  margin-bottom: 2em;
+}
+
+#intro-standard ul
+{
+  list-style: none;
+  padding-left: 0;
+}
+
+#intro-standard ul li
+{
+  background-image: url("/Images/img/icon-checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 .3em;
+}
+
+html[dir="ltr"] #intro-standard ul li
+{
+  padding-left: 30px;
+
+}
+
+html[dir="rtl"] #intro-standard ul li
+{
+  background-position: right 0em bottom 0em;
+  padding-right: 30px;
+}
+
+#intro-standard ul li .avoid-wrap { text-indent: 0em; }
+
+@media (max-width: 1024px)
+{
+  #intro-standard ul li
+  {
+    background-image: none;
+  }
+}
+
+@media (min-width: 452px)
+{
+  #intro-android,
+  #intro-ios-safari,
+  #intro-samsung
+  {
+    float: none;
+    padding-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
+  }
+}
+
+/******************************************************************************
+ * #intro-standard
+ *****************************************************************************/
+
+#intro-standard { padding-top: 3em; }
+
+@media (min-width: 576px) and (max-width: 1023px)
+{
+  /* add spacing left/right on tablets */
+  #intro-standard
+  {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@media(min-width: 1024px)
+{
+  #intro-standard { padding-top: 8em; }
+}
+
+/* Applied ::after to enable use of opacity */
+#intro-graphic-background::after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background-image: url("/Image/img/hero-background.svg");
+  background-repeat: no-repeat;
+  background-position: top -520px right -1120px;
+  z-index: -1;
+}
+
+@media(min-width: 768px)
+{
+  #intro-graphic-background::after
+  {
+    width: 50%;
+    opacity: 1;
+    background-position: top -540px left -400px;
+  }
+}
+
+@media(min-width: 1024px)
+{
+  #intro-graphic-background::after { background-position: top -590px left -330px; }
+}
+
+#intro-graphic
+{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  overflow: hidden;
+}
+
+@media(max-width: 1024px)
+{
+  #intro-graphic
+  {
+    width: 100%;
+  }
+}
+
+@media(min-width: 1024px)
+{
+  #intro-graphic
+  {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
+/* Fixes img max-width bug in IE */
+#intro-graphic img
+{
+  width: 100%;
+}
+
+@media (max-width: 1024px)
+{
+  #intro-graphic img
+  {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 767px)
+{
+  [dir="ltr"] #intro-graphic { direction: rtl; }
+
+  [dir="rtl"] #intro-graphic { direction: ltr; }
+}
+
+#intro-graphic-small
+{
+  min-width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 1025px)
+{
+  #intro-graphic-small { display: none; }
+}
+
+#intro-graphic-large { display: none; }
+
+@media (min-width: 1025px)
+{
+  #intro-graphic-large { display: block; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+  #intro-graphic-small
+  {
+    max-width: unset;
+  }
+}
+
+#intro-standard h1
+{
+  /* Spacing is provided by the #intro-standard section */
+  margin-top: 0;
+  overflow: auto;
+}
+
+@media(max-width: 1024px)
+{
+  #intro-standard
+  {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media(min-width: 992px)
+{
+  #intro-standard h1 { font-size: 50px; }
+
+  [lang="ru"] #intro-standard h1 { font-size: 42px; }
+}
+
+#hero-download-tos
+{
+  margin-bottom: 0.5em;
+  font-size: 14px;
+}
+
+/* Chrome, Chromium, Opera, Yandex and Microsoft Edge, the ToC message should use a normal font size */
+.chrome #hero-download-tos small,
+.chromium #hero-download-tos small,
+.opera #hero-download-tos small,
+.yandexbrowser #hero-download-tos small,
+.msedge #hero-download-tos small
+{
+  font-size: inherit;
+}
+
+.hero-content .centered-list
+{
+  list-style-position: inside;
+  text-indent: -2em;
+}
+
+.app-store-button
+{
+  margin: 1.5em 0;
+}
+
+#hero-download-video
+{
+  /* add space above on phones & tablets */
+  margin-top: 2em;
+  /* prevent default full-width on small tablets */
+  max-width: 550px;
+}
+
+#hero-download-video
+{
+  /* provide a little space between thumbnail and border + shadow */
+  padding: 1em 1em 0 1em;
+}
+
+@media (min-width: 1024px)
+{
+  #hero-download-video
+  {
+    /* keep aligned-top despite padding below */
+    margin-top: -1em;
+  }
+}
+
+#hero-download-video.has-iframe
+{
+  /* remove space around thumbnail when thumbnail is replaced by video */
+  padding: 0;
+}
+
+/** Hide the video border + shadow only when the thumbnail alone is showing */
+#hero-download-video.hide-disclaimer:not(.has-iframe)
+{
+  border-color: transparent;
+  /* there is no box-shadow-color property :( */
+  box-shadow: 1px 1px 0 0 transparent;
+}
+
+/* The thumbnail is taller than the video. But it's hard to see because of the
+ * reflection and whitespace at the bottom. As a result, I am cutting out the
+ * whitespace and reflection when I show the disclaimer so that the section
+ * doesn't visibly resize when the thumbnail is replaced by the a iframe.
+ */
+
+
+/******************************************************************************
+ * #media
+ *****************************************************************************/
+
+#media-section
+{
+  clear: both;
+  text-align: center;
+}
+
+#media-header
+{
+  margin-bottom: 1em;
+}
+
+#media-header h2
+{
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#media-header h2,
+#media-list
+{
+  margin: 0;
+}
+
+#media-list li
+{
+  display: inline-block;
+}
+
+#media-list img
+{
+  max-width: 10em;
+  max-height: 3em;
+  margin: 0 1em 1em;
+}
+
+#media-list a
+{
+  position: relative;
+  display: block;
+}
+
+#media-list a:hover img
+{
+  opacity: 0.3;
+}
+
+#media-list a:hover:after
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1em;
+  width: 1em;
+  padding: 1em;
+  margin-left: -1em;
+  margin-top: -1em;
+  border-radius: 50%;
+  background-color: #d00707;
+  background-image: url(/Image/img/external-icon.png);
+  background-image: linear-gradient(transparent, transparent),
+                    url(/Image/img/external-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em;
+}
+
+@media (min-width: 1024px)
+{
+  #media
+  {
+    display: table;
+    width: 100%;
+  }
+
+  #media-header,
+  #media-list
+  {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  #media-header
+  {
+    margin-bottom: 0;
+  }
+
+  #media-header small
+  {
+    display: none;
+  }
+
+  #media-list { direction: rtl; }
+  [dir="rtl"] #media-list { direction: ltr; }
+
+  @supports (display: flex)
+  {
+    #media-list
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  #media-list
+  {
+    display: table;
+    width: 100%;
+  }
+
+  #media-list li
+  {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  #media-list img
+  {
+    margin: 0 2em;
+  }
+}
+
+/******************************************************************************
+ * #abb-cross-promotion
+ *****************************************************************************/
+
+#abb-cross-promotion
+{
+  padding: 3em 0;
+}
+
+#abb-cross-promotion h2
+{
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 768px)
+{
+  #abb-cross-promotion h2 { text-align: center; }
+}
+
+#abb-logo
+{
+  max-width: 10em;
+}
+
+#abb-app-store-badges
+{
+  margin-top: 0.5em;
+}
+
+#abb-app-store-badges img
+{
+  width: 200px;
+}
+
+@media (max-width: 575px)
+{
+  #abb-app-store-badges a:first-of-type
+  {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 576px)
+{
+  #abb-app-store-badges .one-half
+  {
+    width: 50%;
+  }
+
+  .abb-cross-promo-content { padding-left: 2em; }
+}
+
+.abb-cross-promo-graphic { float: left; }
+
+.abb-cross-promo-content { float: right; }
+
+@media (min-width: 1024px)
+{
+  .abb-cross-promo-graphic { width: 70%; }
+
+  .abb-cross-promo-content { width: 30%; }
+}
+
+@media (max-width: 1024px)
+{
+  .abb-cross-promo-graphic { width: 60%; }
+
+  .abb-cross-promo-content { width: 40%; }
+}
+
+@media (max-width: 768px)
+{
+  .abb-cross-promo-graphic,
+  .abb-cross-promo-content
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  .abb-cross-promo-graphic
+  {
+    padding-top: 5em;
+  }
+
+  .abb-cross-promo-graphic img
+  {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+#abb-cross-promotion .phablet-width
+{
+  max-width: 540px;
+  width: 100%;
+}
+
+@media (max-width: 889px)
+{
+  #abb-cross-promotion .phablet-width
+  {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px)
+{
+  #abb-cross-promotion .phablet-width
+  {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.abb-arrow-container
+{
+  display: none;
+}
+[lang="en"] .abb-arrow-container
+{
+  display: block;
+}
+
+@media (min-width: 890px)
+{
+  .abb-arrow-container { position: relative; }
+
+  .abb-arrow-container img { position: absolute; }
+
+  .abb-arrow-container .abb-arrow
+  {
+    right: -1em;
+    top: -5em;
+  }
+
+  .abb-arrow-container .abb-message
+  {
+    top: -8em;
+    right: -16em;
+  }
+}
+
+@media (max-width: 890px)
+{
+  .abb-arrow-container
+  {
+    padding-left: 2em;
+    padding-bottom: 2em;
+    text-align: left;
+  }
+
+  .abb-arrow-container .abb-arrow
+  {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    width: 70px;
+    height: auto;
+    float: left;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 768px)
+{
+  .abb-arrow-container .abb-message
+  {
+    max-width: 350px;
+    width: 60%;
+  }
+
+  .abb-arrow-container .abb-arrow
+  {
+    float: none;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+
+  .abb-arrow-container img
+  {
+    display: block;
+  }
+}
+
+@media (max-width: 480px)
+{
+
+}
+
+/******************************************************************************
+ * #about-abp
+ *****************************************************************************/
+
+#about-abp-logo img
+{
+  height: auto;
+  width: 100%;
+  max-width: 160px;
+  margin-top: 2em;
+}
+
+@media (max-width: 575px)
+{
+  #about-abp-body
+  {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px)
+{
+  #about-abp-logo { width: 25%; }
+
+  [dir="ltr"] #about-abp-logo { padding-left: 2em; }
+
+  [dir="rtl"] #about-abp-logo { padding-right: 2em; }
+
+  #about-abp-body { width: 75%; }
+
+  [dir="ltr"] #about-abp-body { padding-right: 2em; }
+
+  [dir="rtl"] #about-abp-body { padding-left: 2em; }
+
+}
+
+@media (min-width: 1024px)
+{
+  #about-abp-logo { width: 33.333333%; }
+
+  #about-abp-body { width: 66.666667%; }
+}
+
+/******************************************************************************
+ * #footnote
+ *****************************************************************************/
+
+#footnote
+{
+  padding-top: 3em;
+  padding-bottom: 2em;
+  font-size: 13px;
+  color: #585858;
+}
+
+/* CTA variation test
+ ******************************************************************************/
+
+.cta-var-1 #install-button
+{
+  position: relative;
+  padding: 14px 18px;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #0AAD03;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.16);
+}
+
+.cta-var-1 #install-button::before
+{
+  position: absolute;
+  display: none;
+  content: "";
+  top: 50%;
+  left: 18px;
+  margin-top: -20px;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+@media (min-width: 412px)
+{
+  .cta-var-1 #install-button::before { display: block; }
+}
+
+/* WARNING: Selectors below must be added to the padding-left rule after too */
+
+.cta-var-1.chrome #install-button::before { background-image: url("/Image/img/chrome.svg"); }
+.cta-var-1.chromium #install-button::before { background-image: url("/Image/img/chrome.svg"); }
+.cta-var-1.firefox #install-button::before { background-image: url("/Image/img/firefox.svg"); }
+.cta-var-1.safari #install-button::before { background-image: url("/Image/img/safari.svg"); }
+.cta-var-1.msie #install-button::before { background-image: url("/Image/img/msie.svg"); }
+.cta-var-1.msedge #install-button::before,
+.cta-var-1.msedge_chromium #install-button::before{ background-image: url("/Image/img/msedge.svg"); }
+.cta-var-1.opera #install-button::before { background-image: url("/Image/img/opera.svg"); }
+.cta-var-1.yandexbrowser #install-button::before { background-image: url("/Image/img/yandex.svg"); }
+
+@media (min-width: 412px)
+{
+  .cta-var-1.chrome #install-button,
+  .cta-var-1.chromium #install-button,
+  .cta-var-1.firefox #install-button,
+  .cta-var-1.safari #install-button,
+  .cta-var-1.msie #install-button,
+  .cta-var-1.msedge #install-button,
+  .cta-var-1.msedge_chromium #install-button,
+  .cta-var-1.opera #install-button,
+  .cta-var-1.yandexbrowser #install-button
+  { padding-left: 72px; }
+}

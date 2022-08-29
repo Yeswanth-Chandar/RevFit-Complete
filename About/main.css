@@ -1,0 +1,346 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+::placeholder {
+    color: #eaa211
+}
+
+.page-con-content {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 100%
+}
+
+.page-con-container {
+    position: relative;
+    top: 0;
+    height: auto;
+    margin: auto 60px
+}
+
+.page-in-container {
+    max-width: 1200px;
+    min-height: 60px;
+    margin: 0 auto
+}
+
+.menu-con-release {
+    position: fixed;
+    width: auto;
+    height: 22px;
+    background: rgb(0 0 0/10%);
+    z-index: 1111;
+    bottom: 10px;
+    left: 10px;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 300;
+    /* font-size: 12px; */
+    color: rgb(255 255 255);
+    line-height: 22px;
+    border-radius: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    display: none
+}
+
+.mobile-menu-con-container {
+    position: fixed;
+    z-index: 8990;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17,21,37,.9);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px)
+}
+
+.mobile-menu-con-outter {
+    position: relative;
+    top: 0;
+    height: auto;
+    margin: auto 20px;
+    padding-top: 20px
+}
+
+.mobile-menu-con-inner {
+    max-width: 512px;
+    min-height: 60px;
+    margin: 50px auto 0
+}
+
+.mobile-menu-btn-select {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 300;
+    /* font-size: 18px; */
+    line-height: 50px;
+    position: relative;
+    height: 50px;
+    padding-left: 20px;
+    color: #fff;
+    animation-name: fadeInDown;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255,255,255,.03)
+}
+
+.mobile-menu-btn-select:hover {
+    color: #4e34c9;
+    box-shadow: rgba(0,0,0,.1) 10px 10px 32px 0;
+    background: hsl(0 0% 100%/0.9)!important
+}
+
+.mobile-menu-con-scroll::-webkit-scrollbar {
+    display: none
+}
+
+.mobile-menu-con-scroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding-right: 17px;
+    padding-bottom: 17px
+}
+
+.mobile-menu-con-inner a:nth-child(2n+1) .mobile-menu-btn-select {
+    background: rgba(255,255,255,.05)
+}
+
+.mobile-menu-tx1-group {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 300;
+    /* font-size: 16px; */
+    line-height: 20px;
+    color: rgba(255,255,255,.5);
+    height: 20px;
+    position: relative;
+    margin-top: 20px;
+    animation-name: fadeInDown;
+    animation-duration: .5s;
+    animation-iteration-count: 1
+}
+
+.mobile-menu-con-divider {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,0.5));
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    animation-name: fadeInRight;
+    animation-duration: .5s;
+    animation-iteration-count: 1
+}
+
+.mobile-menu-btn-icon {
+    width: 50px;
+    height: 54px;
+    background: url("/img/icons/arrows/left-h.png") center center/18px no-repeat;
+    position: relative;
+    animation-name: fadeInDown;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    float: left
+}
+
+.mobile-menu-btn-spacer {
+    position: relative;
+    height: 100px
+}
+
+.banner-con-container {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 685px;
+    background-size: cover;
+    background-image: url("/Images/RevFit About.jpg");
+    background-position: top center;
+}
+
+.banner-con-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Images/RevFit About.jpg");
+}
+
+.container-con-block {
+    position: relative;
+    height: auto;
+    min-height: 30px
+}
+
+.container-con-wrapper {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.container-tx1-block {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    /* font-size: 24px; */
+    line-height: 26px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #000
+}
+
+.container-tx1-block h2 {
+    line-height: 40px
+}
+
+.container-tx2-block {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 300;
+    /* font-size: 14px; */
+    line-height: 26px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #000
+}
+
+.container-tx3-block {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    /* font-size: 20px; */
+    line-height: 40px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 26px;
+    text-align: left;
+    color: #000
+}
+
+.container-emp-block {
+    background: #EAA221;
+    width: 4px;
+    height: 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 10px
+}
+
+.container-tx2-block a:hover {
+    text-decoration: underline
+}
+
+.container-tx1-heading {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 26px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #000
+}
+
+.splitter-con-container {
+    position: relative;
+    display: flex
+}
+
+.splitter-img-container {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0,0,0,.2) 20px 20px 64px 0
+}
+
+.splitter-img-wrapper {
+    position: relative;
+    height: 100%
+}
+
+.splitter-txt-wrapper {
+    position: relative;
+    width: 50%;
+    height: auto
+}
+
+.splitter-con-right {
+    margin-left: 40px
+}
+
+.splitter-con-left {
+    margin-right: 40px
+}
+
+.generic-con-button {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.generic-con-button-single {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 15px
+}
+
+.generic-btn-button {
+    width: auto;
+    height: 46px;
+    border-radius: 46px;
+    background: linear-gradient(-135deg,rgb(73,164,255) 25%,rgb(0,116,231) 100%);
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 16px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0,116,231,.4) 0 10px 32px 0;
+    transition: all .1s ease-in-out 0s;
+    border: 2px solid #0080ff!important
+}
+
+.generic-btn-button:hover {
+    background: linear-gradient(-135deg,rgb(46,204,113) 25%,rgb(26,188,156) 100%);
+    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
+    border: 2px solid #57e694!important
+}
+
+.generic-ico-button {
+    height: 46px;
+    width: 46px;
+    float: left;
+    position: relative;
+    display: inline-block;
+    background-size: 24px!important
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+dir="ltr"
+class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Revfit | Review Filter </title>    
+      <link rel="stylesheet" href="defaults.css">
+      <link rel="stylesheet" href="fonts.css">
+      <link rel="stylesheet" href="main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <script> 
+    var rev = window.rev = { }
+
+    function path(path, config)
+      {
+        var parts = path.split(".");
+        var point = rev;
+
+        for (var i = 0; i < parts.length; i++)
+          {
+              if (!point.hasOwnProperty(parts[i]))
+              point[parts[i]] = {};
+              
+              point = point[parts[i]];
+          }
+
+        if (typeof config == "object")
+          for (var key in config)
+          point[key] = config[key];
+
+        return point;
+      }
+    </script>
+
+      
+    <link rel="stylesheet" href="index.css">
+
+    
+  </head>
+
+  <body>
+    
+
+
+
+  <nav id="navbar">
+        <div class="container">
+          <a href="Index.html" hreflang="en" id="navbar-logo">
+            <img
+              src="/Images/RevFit-1C.png"
+              alt="Revfit logo in navigation menu">
+          </a>
+          <a href="#" id="navbar-menu-toggle">
+            <img
+              src="/Images/img/menu-toggle-black.svg"
+              alt="Top menu toggle">
+          </a>
+          <ul id="navbar-menu">
+            
+              <li class="">
+                <a href="/Download/download.html" hreflang="en">Download</a>
+              </li>
+            
+              <li class="">
+                <a href="/About/about.html" hreflang="en">About</a>
+              </li>
+            
+              <li>
+                <a href="/Support/home.html" hreflang="en">Help</a>
+              </li>
+            <li class="">
+              <a href="/Donate/donate.html" hreflang="en">Donate</a>
+            </li>
+            <li class="">
+              <a href="http://localhost:3000" hreflang="en">Blog</a>
+            </li>
+            <li id="navbar-locale-menubar">
+              <a id="navbar-locale-selected">
+                English (US)
+              </a>
+              <ul id="navbar-locale-menu">
+                
+                  <li>
+                    <a href="/de/" hreflang="de">
+                      Deutsch (DE)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/en/" hreflang="en">
+                      English (US)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/es/" hreflang="es">
+                      Español (España) (ES)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/fr/" hreflang="fr">
+                      Français (FR)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/it/" hreflang="it">
+                      Italiano (IT)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/nl/" hreflang="nl">
+                      Nederlands (NL)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/pt_BR/" hreflang="pt-BR">
+                      Português (Brasil) (BR)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/ru/" hreflang="ru">
+                      Русский (RU)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/zh_CN/" hreflang="zh-CN">
+                      中文(简体) (CN)
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </nav>
+
+<div id="hero-download">
+  <div class="hide-on-ios hide-on-android"></div>
+  <div class="container">
+    <div class="row">
+      <header id="intro-standard" class="column one-half content hide-on-maxthon hide-on-android hide-on-ios">
+  <h1><span>Surf the web</span> <span>without Fake Reviews</span></h1>
+  <ul class="checked-list">
+    <li>Optimize Your Time by Filtering Unwanted Reviews</li>
+    <li>Speed Up your Browsing Experience, Make A clear Decision</li>
+    <li>Revfit is free and open source (Business Users Need Licensing)</li>
+  </ul>
+  <a
+  id="install-button"
+  data-install-suffix=" "
+  class="button hero-download-button download-button go-to-download"
+  href="/en/download" hreflang="en">
+  Install
+</a>
+<p id="hero-download-alternate">
+  <a href="/en/download" hreflang="en" class="download-more">
+    Download Revfit for another browser
+  </a>
+</p>
+</header>
+
+      <div id="intro-graphic" class="column one-half hide-on-ios hide-on-android">
+  <img id="intro-graphic-large" src="/Images/c6adf54fc02fea4ac9e2e003bbf5370d.gif" srcset="/img/hero-ui-illustration.svg 2x" alt="">
+  <img id="intro-graphic-small" src="/Images/c6adf54fc02fea4ac9e2e003bbf5370d.gif" srcset="/img/hero-ui-illustration-mobile.svg 2x" alt="" />
+</div>
+
+      <article id="intro-ios-safari" class="intro-mobile column one-half text-center content section show-on-ios hero-content">
+  <header>
+    <img
+      height="140"
+      src="/Images/img/ios-safari-logo.svg"
+      alt="iOS Safari logo">
+    <h1><span>Filter Reviews with</span> <span>Revfit for Safari</span> on iOS</h1>
+  </header>
+  <ul class="centered-list">
+    <li>Fliter Fake Reviews</li>
+    <li>Save data and battery life</li>
+    <li>Block Spamming, competitor review, review bombing</li>
+    <li>Works exclusively for Safari</li>
+  </ul>
+  <div>
+    <a
+  class="app-store-button abp-ios-safari"
+  href="https://rev.to/Revfitplus/ios_safari_install/abp-website"
+  title="Get Revfit for Safari on iOS">
+  <img
+    height="60"
+    src="/Images/img/apple-app-store-badge.svg"
+    alt="Download Revfit for Safari on iOS on the App Store">
+</a>
+
+  </div>
+  <div>
+    <a href="/en/download" hreflang="en" class="download-more">View all our Review Filtering products</a>
+  </div>
+</article>
+
+      <article id="intro-android" class="intro-mobile column one-half content section text-center show-on-android hide-on-samsung hero-content">
+  <header>
+    <img
+      height="170"
+      src="/img/abb-browser-icon.svg"
+      alt="Revfit Browser logo">
+    <h1><span>Get</span> <span>Revfit App</span></h1>
+    <p class="subheading"><span>The best Review Comparison App</span> <span>for Android</span></p>
+  </header>
+  <ul class="centered-list">
+    <li>Fliter Fake Reviews</li>
+    <li>Save data and battery life</li>
+    <li>Block Spamming, competitor review, review bombing</li>
+  </ul>
+  <div>
+    <a
+  class="app-store-button abb-android"
+  href="https://rev.to/Revfitbrowser/android/abp-website"
+  title="Get Revfit Browser on Android">
+  <img
+    width="200"
+    height="60"
+    src="/Images/img/google-play-badge.png"
+    alt="Download Revfit Browser for Android on Google Play">
+</a>
+
+  </div>
+  <div>
+    <a href="/en/download" hreflang="en" class="download-more">View all our ad blocking products</a>
+  </div>
+</article>
+
+      <article id="intro-samsung" class="intro-mobile column one-half content section text-center show-on-samsung hero-content">
+  <header>
+    <img
+      height="140"
+      src="/Images/img/samsung-internet-logo.png"
+      alt="Samsung Internet logo">
+    <h1><span>Filter Reviews with</span> <span>Revfit for Samsung Internet</span></h1>
+    <p class="subheading"><span>Designed specifically</span> <span>for <strong>Samsung Internet</strong></span></p>
+  </header>
+  <ul class="centered-list">
+    <li>Fliter Fake Reviews</li>
+    <li>Save data and battery life</li>
+    <li>Block Spamming, competitor review, review bombing</li>
+  </ul>
+  <div>
+    <a
+  class="app-store-button abp-android-samsungBrowser"
+  href="https://rev.to/Revfitplus/android_samsung_install/"
+  title="Get Revfit on Samsung Internet">
+  <img
+    height="60"
+    src="/Images/img/google-play-badge.png
+    alt="Download Revfit for Samsung Internet on Google Play">
+</a>
+
+  </div>
+  <div>
+    <a href="/en/download" hreflang="en" class="download-more">View all our ad blocking products</a>
+  </div>
+</article>
+
+    </div>
+    <div id="intro-notices">
+
+  
+
+  <p class="show-on-msie">Revfit for Internet Explorer is supported on the following editions of Windows 10 – Windows 10 Pro, Windows 10 Education and Windows 10 Enterprise. Revfit for Internet Explorer is supported on the in-market supported servicing branches of Windows 10 including - Current Branch, Current Branch for Business and the following Long-Term Servicing Branch: Windows 10.</p>
+
+</div>
+  </div>
+</div>
+<div class="item-group container content">
+  <div class="row">
+    <div class="column one-third">
+      <img
+        height="242"
+        width="240"
+        src="/Images/pngegg.png"
+        srcset="/img/rocket-illustration.svg 2x"
+        alt="Rocket">
+      <h2 class="h3">Faster, Spam Free Browsing</h2>
+      <p>Filter Reviews that Makes your browsing experience Bad. Say goodbye to Fake Reviews, Review Bombing, competitor Reviews and more. Filtering Unwanted Review means pages load faster.</p>
+    </div>
+    <div class="column one-third">
+      <img
+        height="242"
+        width="240"
+        src="/Images/kindpng_2984949.png"
+        srcset="/img/lock-illustration.svg 2x"
+        alt="Padlock">
+      <h2 class="h3">Make Clear Decision, Browse Clearly</h2>
+      <p>With Revfit You can make every review worthy without worring about false claims &quot;Spamming&quot; Revfit Will Help You to Make Clear Cut Decision.</p>
+    </div>
+    <div class="column one-third">
+      <img
+        height="242"
+        width="240"
+        src="/Images/png-2179695.png"
+        srcset="/img/checkmark-illustration.svg 2x"
+        alt="Checkmark in an octagon">
+      <h2 class="h3">Glaze through ReadWorthy Reviews</h2>
+      <p>Revfit Uses Mechine Learning to Filter Through. Filter Spam Reviews (enabled by default). Preferences can be Changed in Extension Settings.</p>
+    </div>
+  </div>
+</div>
+
+<section id="abb-cross-promotion" class="bg-secondary hide-on-ios hide-on-android">
+  <div class="container content">
+    <div class="phablet-width">
+      <h2>
+        Want to Filter Reviews & Spammers <span class="avoid-wrap">mobile devices?</span>
+      </h2>
+    </div>
+
+    <div class="abb-cross-promo-content">
+      <figure>
+        <img src="/Images/RevFit Logo V1.png"
+          alt="Revfit Browser icon"
+          id="abb-logo">
+        <figcaption>
+          <h3>
+            Revfit App
+          </h3>
+          <p>
+            From Our team Revfit, A Easy way to filter review is in your hands, Revfit App is now available for your Android devices.
+          </p>
+        </figcaption>
+      </figure>
+      <div id="abb-app-store-badges">
+        <a
+  class="app-store-button abb-android"
+  href="https://rev.to/Revfitbrowser/android/abp-website"
+  title="Get Revfit Browser on Android">
+  <img
+    width="200"
+    height="60"
+    src="/Images/img/google-play-badge.png"
+    alt="Download Revfit Browser for Android on Google Play">
+</a>
+
+      </div>
+    </div>
+
+  <div class="abb-cross-promo-graphic">
+    <div class="abb-arrow-container">
+      <img class="abb-message" src="/Images/img/abb-cross-promo-message1.svg" alt="Illustration with text reading: Watch videos without any annoying ads!">
+      <img class="abb-arrow" src="/Images/img/pointing-arrow.svg" alt="Illustration of an arrow pointing to an Android phone playing a video">
+    </div>
+    <img class="abb-revfit-display" src="/Images/RevFit Download.jpg"
+    alt="Illustration of an Android phone playing a video">
+  </div>
+</div>
+
+</section>
+
+<article id="about-abp" class="show-on-ios show-on-android bg-secondary">
+  <div class="container section content">
+    <div class="row">
+      <div id="about-abp-logo" class="column text-center">
+        <img src="/Images/img/abp-laptop.svg">
+      </div>
+      <div id="about-abp-body" class="column">
+        <h2>
+          What is Revfit?
+        </h2>
+  
+        <p>
+          Revfit is an open source project licensed under <a href="https://www.revfit.org/licenses.html">GPLv3</a> and subject to its <a href="/en/terms" hreflang="en">Terms of Use</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+  
+    <script id="download-label-chrome" type="text/template">
+      Get Revfit for Chrome
+    </script>
+  
+
+  
+    <script id="download-label-chromium" type="text/template">
+      Get Revfit for Chromium
+    </script>
+  
+
+  
+    <script id="download-label-firefox" type="text/template">
+      Get Revfit for Firefox
+    </script>
+  
+
+  
+    <script id="download-label-safari" type="text/template">
+      Agree and Install for Safari
+    </script>
+    <script id="alt-download-label-safari" type="text/template">
+      Install for Safari
+    </script>
+  
+
+  
+    <script id="download-label-msie" type="text/template">
+      Agree and Install for Internet Explorer
+    </script>
+    <script id="alt-download-label-msie" type="text/template">
+      Install for Internet Explorer
+    </script>
+  
+
+  
+    <script id="download-label-msedge" type="text/template">
+      Get Revfit for Microsoft Edge
+    </script>
+  
+
+  
+    <script id="download-label-opera" type="text/template">
+      Get Revfit for Opera
+    </script>
+  
+
+  
+    <script id="download-label-yandexbrowser" type="text/template">
+      Get Revfit for Yandex Browser
+    </script>
+  
+
+  
+    <script id="download-label-ios" type="text/template">
+      Agree and Install for iOS
+    </script>
+    <script id="alt-download-label-ios" type="text/template">
+      Install for iOS
+    </script>
+  
+
+  
+    <script id="download-label-android" type="text/template">
+      Agree and Install for Android
+    </script>
+    <script id="alt-download-label-android" type="text/template">
+      Install for Android
+    </script>
+  
+
+  
+    <script id="download-label-samsungBrowser" type="text/template">
+      Agree and Install for Samsung Internet
+    </script>
+    <script id="alt-download-label-samsungBrowser" type="text/template">
+      Install for Samsung Internet
+    </script>
+  
+
+
+<script src="/Vendor/bowser.js"></script>
+<script src="install-button.js"></script>
+    
+
+    
+
+<footer id="footer" class="content">
+  <div class="footer-wrap footer-links">
+    <div class="container">
+      <div class="row">
+        <nav class="column one-fourth">
+          <h5 class="footer-heading">Download</h5>
+          <ul>
+            <li><a href="/en/Revfit-plus-chrome" hreflang="en">Revfit for Chrome</a></li>
+            <li><a href="/en/Revfit-plus-firefox" hreflang="en">Revfit for Firefox</a></li>
+            <li><a href="/en/ad-blocker-safari" hreflang="en">Revfit for Safari</a></li>
+            <li><a href="/en/Revfit-plus-opera" hreflang="en">Revfit for Opera</a></li>
+            <li><a href="/en/Revfit-plus-edge" hreflang="en">Revfit for Edge</a></li>
+            <li><a href="/en/android-install" hreflang="en">Revfit App for Android</a></li>
+          </ul>
+        </nav>
+        <nav class="column one-fourth">
+          <h5 class="footer-heading">Resources</h5>
+          <ul>
+            
+              <li><a href="/en/acceptable-reviews" hreflang="en">Review Filtering</a></li>
+            
+              <li><a href="/en/documentation" hreflang="en">Documentation</a></li>
+            
+              <li><a href="/en/deployments" hreflang="en">For admins</a></li>
+            
+              <li><a href="/en/bugs" hreflang="en">Report an issue</a></li>
+            
+            
+              <li><a href="/en/faq-privacy" hreflang="en">Privacy FAQ</a></li>
+            
+            <li><a href="https://help.rev.com/en/Revfitplus/how-to-write-filters" target="_blank" hreflang="en">Writing Revfit filters</a></li>
+          </ul>
+        </nav>
+        <nav class="column one-fourth">
+          <h5 class="footer-heading">Community</h5>
+          <ul>
+            <li><a href="/en/contribute" hreflang="en">Contribute</a></li>
+            <li><a href="https://Revfitplus.org/releases/" hreflang="en">Announcements</a></li>
+            <li><a href="https://Revfitplus.org/blog/" hreflang="en">Blog</a></li>
+            <li><a href="https://Revfitplus.org/forum/" hreflang="en">Forum</a></li>
+          </ul>
+        </nav>
+        <nav class="column one-fourth">
+          <h5 class="footer-heading">Development</h5>
+          <ul>
+            <li><a href="https://gitlab.com/rev/Revfitplus">Source Code</a></li>
+            
+  
+    <li><a href="/en/tools" hreflang="en">Tools</a></li>
+  
+
+            <li><a href="/en/careers" hreflang="en" hreflang="en">Jobs</a></li>
+            <li><a href="/en/partner-integrations" hreflang="en"></a></li>
+          </ul>
+        </nav>
+
+        <nav id="social-list" class="column">
+          <h5 class="footer-social-heading">Follow us on</h5>
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/RevfitPlus"
+                title="Follow Revfit on Twitter"
+                target="_blank" rel="nofollow noopener">
+                <img
+                  src="/Images/img/footer-twitter-glyphicon.png"
+                  alt="Twitter glyphicon">
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/user/RevfitPlusOfficial"
+                title="Subscribe to Revfit on YouTube"
+                target="_blank" rel="nofollow noopener">
+                <img
+                  src="/Images/img/footer-youtube-glyphicon.png"
+                  alt="YouTube glyphicon">
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/Revfitplus"
+                title="Follow Revfit on Facebook"
+                target="_blank" rel="nofollow noopener">
+                <img
+                  src="/Images/img/footer-facebook-glyphicon.png"
+                  alt="Facebook glyphicon">
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/Revfitplus/"
+                title="Follow Revfit on Instagram"
+                target="_blank" rel="nofollow noopener">
+                <img
+                  src="/Images/img/footer-instagram-glyphicon.png"
+                  alt="Instagram glyphicon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div> 
+    </div> 
+  </div> 
+
+  <div class="footer-wrap footer-legal-links">
+    <div class="container">
+      <div id="footer-legal">
+        <p id="copyright-notice">Copyright © 2022 All rights reserved. Revfit<sup>®</sup></p>
+        <ul id="legal-list">
+          
+            
+              <li><a href="/en/terms" hreflang="en">Terms of use</a></li>
+            
+              <li><a href="/en/privacy" hreflang="en">Privacy Policy</a></li>
+            
+          
+        </ul>
+      </div> 
+    </div> 
+  </div> 
+</footer> 
+</form>
+  <script src="main.js"></script>
+  </body>
+</html>
