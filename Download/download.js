@@ -52,8 +52,8 @@
           (y.style.maxHeight = i + "px"));
   }
   rev &&
-    rev.cookieEnabled &&
-    document.documentElement.classList.add("has-cookies"),
+    rev.revfitEnabled &&
+    document.documentElement.classList.add("has-revfit"),
     (h = document.getElementById("navbar-locale-selected")) &&
       ((o = !1),
       h.addEventListener(
@@ -127,10 +127,8 @@
       }, 250)),
     (m = document.getElementById("footer")),
     (p = t(m).paddingBottom),
-    (f = document.querySelector(".cookiebar")),
-    (b = document.querySelector(".cookieprompt")),
-    (v = document.querySelector(".cookies-close")),
-    (h = [].slice.call(document.querySelectorAll(".cookies-submit"))),
+    (v = document.querySelector(".revfit-close")),
+    (h = [].slice.call(document.querySelectorAll(".revfit-submit"))),
     setInterval(function () {
       e(b) && i(m, b.offsetHeight + "px"), e(f) && i(m, f.offsetHeight + "px");
     }, 250),
